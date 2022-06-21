@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="imagens/King.png" />
+ 
+    <link rel="stylesheet" href="style.css" />
+    <title>Registro</title>
+  </head>
+
+  <body>
+    <div id="telaPreta" class="telaPreta"></div>
+    <img class="logo" src="imagens/logo.png" alt="" />
+    <div class="container">
+      <header>
+        <h1 class="title">PARTICIPE DO CAMPEONATO MAIS GOSTOSO DA INTERNET</h1>
+      </header>
+      <div class="formcontainer">
+        <h2 class="marginbottom">
+          Garanta já seu lugar no 3º campeonato do servidor Brasileiro de
+          Overcooked
+        </h2>
+
+        <p class="marginbottom">
+          Se registre e fique por dentro das atualizações do campeonato!
+        </p>
+
+        <label for="cars">Discord ID:</label>
+        <form method="post" required>
+          <input
+            type="text"
+            name="PNOME"
+            id="name"
+            placeholder="Kevin#6710"
+            required
+          />
+          <label for="Plataforma">Sua Plataforma</label>
+          <select name="PLACE" id="Estados" required>
+            <option value="STEAM">Steam</option>
+            <option value="EPIC">Epic</option>
+          </select>
+
+          <label for="cars">ID Da Plataforma:</label>
+          <input
+            type="text"
+            name="EMAIL"
+            id="Email"
+            placeholder="Favor digitar o teu Email"
+            required
+          />
+
+          <input
+            class="registrar"
+            onclick="registrar()"
+            type="submit"
+            value="Registrar"
+          />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="info_1">
+        <img
+          data-anima="esquerda"
+          class="bichinho"
+          src="imagens/onion_king.png"
+          alt=""
+        />
+      </div>
+
+      <div class="info_2">
+        <section class="bloco_1" data-anima="direita">
+          <h2>Onde?</h2>
+          <p>
+            No Nosso<a
+              class="linkDireto_2"
+              href="https://discord.gg/dDByaZABMG"
+            >
+              Servidor</a
+            >Do Discord
+          </p>
+        </section>
+
+        <section class="bloco_1" data-anima="esquerda">
+          <h2>Quando?</h2>
+          <p>08/08/2022</p>
+        </section>
+
+        <section class="bloco_1" data-anima="direita">
+          <h2>Quando?</h2>
+          <p>08/08</p>
+        </section>
+
+        <section class="bloco_1" data-anima="esquerda">
+          <h2>Quando?</h2>
+          <p>08/08</p>
+        </section>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background: rgb(193, 19, 216);
+  background: radial-gradient(
+    circle,
+    rgba(193, 19, 216, 0.9336922268907563) 0%,
+    rgba(253, 45, 95, 1) 100%
+  );
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-family: "Kanit", sans-serif;
+}
+.title {
+  font-size: 26px;
+}
+.container {
+  background-image: url(imagens/wallpaper.png);
+  margin: auto;
+  height: 635px;
+  width: auto;
+  background-size: 100% 100%;
+}
+.formcontainer {
+  text-align: center;
+  background-color: rgb(53, 51, 51);
+  max-width: 230px;
+  margin-top: 35px;
+  padding: 20px;
+  float: right;
+  position: absolute;
+  right: 90px;
+  border-radius: 20px;
+  border: 5px solid #e0417e;
+}
+.formcontainer p {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+h2.marginbottom {
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+}
+.linkDireto {
+  text-decoration: none;
+  position: relative;
+  color: white;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.linkDireto:hover::after {
+  content: attr(data-descr);
+  position: absolute;
+  left: 20;
+  top: 5px;
+  height: 80px;
+  width: 90px;
+  border: 1px #aaaaaa solid;
+  border-radius: 10px;
+  background-color: #e0417e;
+  padding: 12px;
+  color: #ffffff;
+  font-size: 14px;
+  z-index: 1;
+}
+.linkDireto_2 {
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #e0417e;
+  padding: 3px;
+  color: #ffffff;
+  font-size: 14px;
+  z-index: 1;
+}
+.linkDireto_2:hover {
+  color: #faefef;
+  background-color: #1fd7f0;
+}
+.marginbottom {
+  color: rgb(247, 242, 248);
+  margin-bottom: 15px;
+}
+label {
+  font-weight: 700;
+  color: #e657de;
+  margin-bottom: 5px;
+  position: relative;
+  bottom: 9px;
+}
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+input::placeholder {
+  color: rgba(48, 47, 47, 0.363);
+  font-weight: 900;
+  font-size: 15px;
+}
+input[type="submit"] {
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  background: rgb(241, 123, 201);
+  border: 3px solid rgb(191, 106, 126);
+  font-size: 20px;
+  font-weight: 900;
+  padding: 12px;
+  width: 210px;
+  margin: 10px;
+  transition: all ease-in-out 400ms;
+  box-shadow: inset 0 0 0 0 rgba(187, 154, 180, 0.566);
+}
+input:hover[type="submit"] {
+  box-shadow: inset 210px 0 0 0 rgb(0, 0, 0);
+  border: solid 3px rgb(242, 106, 247);
+  color: rgb(242, 106, 247);
+}
+select {
+  padding: 10px;
+  font-family: "Kanit", sans-serif;
+  appearance: none;
+  background-image: url(imagens/arrow.jpg);
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 10px);
+  background-position-y: center;
+  font-size: 15px;
+}
+
+
+footer {
+  background-color: rgb(216, 197, 167);
+  padding-top: 15px;
+  display: flex;
+}
+.info_1 {
+  width: 22%;
+}
+.bichinho {
+  height: 300px;
+  width: 300px;
+}
+
+.info_2 {
+  z-index: 1;
+  background-color: rgb(53, 51, 51);
+  border: solid 5px #e657de;
+  width: 69%;
+  height: 300px;
+  border-radius: 50px;
+  padding-top: 50px;
+  text-align: center;
+  color: aliceblue;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+.bloco_1 h2 {
+  color: #e0417e;
+}
+.bloco_1 p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-top: 50px;
+  max-width: 250px;
+}
+.logo {
+  position: absolute;
+  top: 150px;
+  left: 220px;
+}
+
+
+.telaPreta{
+display: none;
+}
+.escurecer{
+  background-color: rgba(0, 0, 0, 0.596);
+  width: 100%;
+  height: 1455px;
+  position: absolute;
+  z-index: 2;
+}
+
+
+
+
+/*Animações*/
+[data-anima] {
+  opacity: 0;
+  transition: 2s;
+}
+[data-anima="esquerda"] {
+  transform: translate3d(500px, 0, 0);
+}
+[data-anima="direita"] {
+  transform: translate3d(0, 500px, 0);
+}
+
+[data-anima].animacao {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
